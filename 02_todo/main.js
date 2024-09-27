@@ -32,6 +32,7 @@ function renderTodos() {
         <li>
             ${todo}
             <button class="delete-btn" onclick="deleteTodo(${index})">🗑️</button>
+            <button class="delete-btn" onclick="editTodo(${index})">✏️</button>
         </li>
     `).join('');
 }
@@ -41,3 +42,10 @@ function deleteTodo(index) {
     renderTodos();
 }
 
+function editTodo(index) {
+    const newText = prompt("Enter the new todo text:", todos[index]);
+    if (newText && newText.trim()) {
+        todos[index] = newText.trim();
+        renderTodos();
+    }
+}

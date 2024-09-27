@@ -96,3 +96,10 @@ input[type="text"] {
 del {
   color: #6c757d;
 }
+
+.todo-color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
