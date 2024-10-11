@@ -1,0 +1,3 @@
+[submodule "vuetodo"]
+	path = vuetodo
+	url = https://github.com/UmakanthKaspa/vuetodo.git
