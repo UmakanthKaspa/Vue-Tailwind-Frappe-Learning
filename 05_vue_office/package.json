@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "canvas-confetti": "^1.9.3",
-    "vue": "^3.4.29"
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",

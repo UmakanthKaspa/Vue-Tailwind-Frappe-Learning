@@ -5,7 +5,12 @@
 
   <Team v-if="currentTab == 'team'" />
 
-  <Confetti v-if="currentTab == 'confetti'" />
+  <Confetti v-if="currentTab == 'confetti'" /> 
+
+  <Counter v-if="currentTab == 'composable'" />
+  
+  <RouterView v-if="currentTab == 'routerView'" />
+
 </template>
 
 <script setup>
@@ -14,6 +19,8 @@ import About from "./components/About.vue";
 import Team from "./components/Team.vue";
 import Nav from "./components/Nav.vue";
 import Confetti from "./components/Confetti.vue";
+import Counter from "./Pages/counter.vue";
+import RouterView from "./Pages/RouterView.vue";
 
 const currentTab = ref("about");
 
